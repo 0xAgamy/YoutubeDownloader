@@ -2,13 +2,14 @@
 ## Overview 
 This script allows you to download videos and playlists from YouTube using the `yt_dlp` library. It supports downloading single videos, entire playlists, and multiple videos concurrently. The script also supports downloading subtitles in specified languages.
 ## Features 
-- **Download Single Video:** Download a single video from YouTube. - **Download Playlist:** Download an entire playlist from YouTube.
+- **Download Single Video:** Download a single video from YouTube.
+- **Download Playlist:** Download an entire playlist from YouTube.
 - **Download Multiple Videos:** Download multiple videos concurrently. 
 - **Custom Output Directory:** Specify the directory where the downloaded files will be saved. - **Format Selection:** Choose the format of the downloaded video. 
 - **Subtitles Support:** Download subtitles in specified languages
 
 ## Requirements 
-- Python 3.6+
+- Python 3.9+
 - `yt_dlp` library 
 - `tqdm` library 
 - `ffmpeg` software 
@@ -18,7 +19,6 @@ This script allows you to download videos and playlists from YouTube using the `
 
 pip install yt-dlp tqdm
 ```
-
 
 ### Installing ffmpeg
 
@@ -58,17 +58,20 @@ The script can be run from the command line. Below are the available options:
 
 #### Download a Single Video
 
-`python Youtube_Downloader.py --video <video_url> --output <output_directory> --format <format> --subtitles --subtitle-langs en`
-
+```bash
+python Youtube_Downloader.py --video <video_url> --output <output_directory> --format <format> --subtitles --subtitle-langs en`
+```
 #### Download a Playlist
 
-
-`python Youtube_Downloader.py --playlist <playlist_url> --output <output_directory> --format <format> --subtitles --subtitle-langs en`
+``` bash
+python Youtube_Downloader.py --playlist <playlist_url> --output <output_directory> --format <format> --subtitles --subtitle-langs en`
+```
 
 #### Download Multiple Videos
 
-
-`python Youtube_Downloader.py --multiple <video_url1> <video_url2> <video_url3> --output <output_directory> --format <format> --subtitles --subtitle-langs en`
+``` bash
+python Youtube_Downloader.py --multiple <video_url1> <video_url2> <video_url3> --output <output_directory> --format <format> --subtitles --subtitle-langs en`
+```
 
 ### Options Description
 
